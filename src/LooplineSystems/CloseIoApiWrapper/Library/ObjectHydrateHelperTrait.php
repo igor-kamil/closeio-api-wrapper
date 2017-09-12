@@ -40,11 +40,13 @@ trait ObjectHydrateHelperTrait
                     $this->$setter($value);
                 } else {
                     // check if setter method exists that doesn't match Zend filter format
+                    /*
                     if (in_array($setter, array_keys($method_mapper))) {
                         $this->$method_mapper[$setter]($value);
                     } else {
                         // value is not set - Entities should be extended if needed
                     }
+                    */
                 }
             } else {
                 // try to hydrate the nested objects
